@@ -1,0 +1,82 @@
+[
+  {"id": "q01", "category": "side_effects", "question": "What are the most common side effects of atorvastatin?",
+   "expected_drug": "atorvastatin", "expected_sections": ["side_effects"],
+   "expected_facts": [["nasopharyngitis"], ["arthralgia", "joint pain"], ["diarrhea"]]},
+
+  {"id": "q02", "category": "interactions", "question": "Which drug interactions increase the bleeding risk with warfarin?",
+   "expected_drug": "warfarin", "expected_sections": ["interactions"],
+   "expected_facts": [["bleeding"], ["CYP2C9", "antiplatelet", "anticoagulant", "aspirin"]]},
+
+  {"id": "q03", "category": "contraindications", "question": "When is metformin contraindicated?",
+   "expected_drug": "metformin", "expected_sections": ["contraindications"],
+   "expected_facts": [["eGFR", "glomerular filtration"], ["30"], ["metabolic acidosis", "ketoacidosis"]]},
+
+  {"id": "q04", "category": "special_populations", "question": "How should gabapentin dosing be adjusted?",
+   "patient": {"age_group": "adult", "renal_impairment": true},
+   "expected_drug": "gabapentin", "expected_sections": ["dosage", "special_populations"],
+   "expected_facts": [["creatinine clearance", "CrCl"], ["hemodialysis", "dialysis"]]},
+
+  {"id": "q05", "category": "dosage", "question": "What is the maximum daily dose of acetaminophen for adults?",
+   "expected_drug": "acetaminophen", "expected_sections": ["dosage"],
+   "expected_facts": [["4000 mg", "4,000 mg", "4 g"]]},
+
+  {"id": "q06", "category": "dosage", "question": "What is the paracetamol dose for this child?",
+   "patient": {"age_group": "child", "weight_kg": 20},
+   "expected_drug": "acetaminophen", "expected_sections": ["dosage"],
+   "expected_facts": [["15 mg/kg", "15 mg per kg"], ["75 mg/kg", "75 mg per kg"], ["300 mg"]]},
+
+  {"id": "q07", "category": "overdose", "question": "How is an acetaminophen overdose treated?",
+   "expected_drug": "acetaminophen", "expected_sections": ["overdose"],
+   "expected_facts": [["N-acetylcysteine", "acetylcysteine"]]},
+
+  {"id": "q08", "category": "contraindications", "question": "Who should not take amoxicillin?",
+   "expected_drug": "amoxicillin", "expected_sections": ["contraindications"],
+   "expected_facts": [["hypersensitivity", "allergic", "anaphylaxis"], ["penicillin", "beta-lactam"]]},
+
+  {"id": "q09", "category": "interactions", "question": "What happens if lisinopril is taken with an NSAID like ibuprofen?",
+   "expected_drug": "lisinopril", "expected_sections": ["interactions"],
+   "expected_facts": [["renal", "kidney"], ["antihypertensive", "blood pressure"]]},
+
+  {"id": "q10", "category": "interactions", "question": "Why should grapefruit juice and strong CYP3A4 inhibitors be avoided with simvastatin?",
+   "expected_drug": "simvastatin", "expected_sections": ["interactions", "contraindications", "warnings"],
+   "expected_facts": [["CYP3A4"], ["myopathy", "rhabdomyolysis"]]},
+
+  {"id": "q11", "category": "boxed_warning", "question": "What is the boxed warning for ciprofloxacin?",
+   "expected_drug": "ciprofloxacin", "expected_sections": ["boxed_warning"],
+   "expected_facts": [["tendinitis", "tendon rupture", "tendon"], ["myasthenia gravis"], ["peripheral neuropathy", "central nervous system"]]},
+
+  {"id": "q12", "category": "boxed_warning", "question": "Does sertraline carry a warning about suicidal thoughts?",
+   "expected_drug": "sertraline", "expected_sections": ["boxed_warning", "warnings"],
+   "expected_facts": [["suicidal", "suicidality"], ["pediatric", "young adult", "children"]]},
+
+  {"id": "q13", "category": "boxed_warning", "question": "Can levothyroxine be used for weight loss?",
+   "expected_drug": "levothyroxine", "expected_sections": ["boxed_warning", "indications"],
+   "expected_facts": [["obesity", "weight loss", "weight reduction"], ["not", "should not"]]},
+
+  {"id": "q14", "category": "interactions", "question": "Is there an interaction between clopidogrel and omeprazole?",
+   "expected_drug": "clopidogrel", "expected_sections": ["interactions", "warnings", "boxed_warning"],
+   "expected_facts": [["CYP2C19"], ["omeprazole"]]},
+
+  {"id": "q15", "category": "side_effects", "question": "What are the common adverse reactions of amlodipine?",
+   "expected_drug": "amlodipine", "expected_sections": ["side_effects"],
+   "expected_facts": [["edema"], ["dizziness", "flushing", "palpitation", "fatigue"]]},
+
+  {"id": "q16", "category": "special_populations", "question": "Can losartan be used during pregnancy?",
+   "expected_drug": "losartan", "expected_sections": ["boxed_warning", "special_populations", "warnings"],
+   "expected_facts": [["fetal toxicity", "fetal", "fetus"], ["discontinue"]]},
+
+  {"id": "q17", "category": "special_populations", "question": "Why is doxycycline generally avoided in young children?",
+   "patient": {"age_group": "child"},
+   "expected_drug": "doxycycline", "expected_sections": ["warnings", "special_populations"],
+   "expected_facts": [["tooth", "teeth"], ["discoloration"]]},
+
+  {"id": "q18", "category": "warnings", "question": "What is paradoxical bronchospasm with albuterol?",
+   "expected_drug": "albuterol", "expected_sections": ["warnings"],
+   "expected_facts": [["paradoxical bronchospasm"], ["life-threatening", "discontinue"]]},
+
+  {"id": "q19", "category": "out_of_scope", "question": "What is the starting dose of semaglutide?",
+   "expect_refusal": true, "expected_drug": null, "expected_sections": [], "expected_facts": []},
+
+  {"id": "q20", "category": "chit_chat", "question": "Hello! Who are you and what can you do?",
+   "expect_retrieval": false, "expected_drug": null, "expected_sections": [], "expected_facts": []}
+]

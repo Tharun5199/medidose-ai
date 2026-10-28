@@ -1,0 +1,24 @@
+# Phase 1 — data download
+requests>=2.31
+python-dotenv>=1.0
+
+# Phase 2/3 — embeddings + vector store
+chromadb>=0.5
+sentence-transformers>=3.0
+langchain-text-splitters>=0.3
+langchain-chroma>=0.1
+langchain-huggingface>=0.1
+
+# Phase 4 — agent
+langchain>=0.3
+langchain-core>=0.3
+langchain-groq>=0.2
+
+# Phase 5 — API
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+
+# Phase 8 — tests
+pytest>=8.0
+httpx>=0.27

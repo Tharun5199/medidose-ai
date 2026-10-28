@@ -1,0 +1,1402 @@
+{
+  "timestamp": "2026-10-28T20:28:07",
+  "k": 4,
+  "agent_model": "openai/gpt-oss-120b",
+  "judge_model": "openai/gpt-oss-20b",
+  "results": [
+    {
+      "id": "q01",
+      "category": "side_effects",
+      "question": "What are the most common side effects of atorvastatin?",
+      "expected_drug": "atorvastatin",
+      "expected_sections": [
+        "side_effects"
+      ],
+      "retrieval": {
+        "unfiltered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "atorvastatin/side_effects",
+            "atorvastatin/side_effects",
+            "atorvastatin/side_effects",
+            "atorvastatin/side_effects"
+          ]
+        },
+        "drug_filtered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "atorvastatin/side_effects",
+            "atorvastatin/side_effects",
+            "atorvastatin/side_effects",
+            "atorvastatin/side_effects"
+          ]
+        }
+      },
+      "agent": {
+        "seconds": 4.1,
+        "answer": "**Most common adverse reactions (\u2265\u202f5% incidence) reported for atorvastatin**\n\n- Nasopharyngitis  \n- Arthralgia (joint pain)  \n- Diarrhea  \n- Pain in extremity (musculoskeletal pain)  \n- Urinary tract infection  \n\nThese events were observed at an incidence of 5\u202f% or higher in the pooled clinical\u2011trial data for atorvastatin compared with placebo[3].",
+        "retrieved": true,
+        "routing_ok": true,
+        "searches": [
+          "atorvastatin/side_effects: common side effects"
+        ],
+        "n_sources": 5,
+        "unverified_numbers": [],
+        "agent_section_hit": true,
+        "answer_fact_recall": 1.0,
+        "citations_valid": true,
+        "citation_coverage": 0.5,
+        "judge": {
+          "faithfulness": 1.0,
+          "claims": [
+            {
+              "claim": "Nasopharyngitis is a common side effect of atorvastatin.",
+              "supported": true,
+              "reason": "Passage 1 lists nasopharyngitis with incidence \u22655% in atorvastatin groups."
+            },
+            {
+              "claim": "Arthralgia is a common side effect of atorvastatin.",
+              "supported": true,
+              "reason": "Passage 3 and 5 list arthralgia with incidence \u22655% in atorvastatin groups."
+            },
+            {
+              "claim": "Diarrhea is a common side effect of atorvastatin.",
+              "supported": true,
+              "reason": "Passage 3 and 5 list diarrhea with incidence \u22655% in atorvastatin groups."
+            },
+            {
+              "claim": "Pain in extremity is a common side effect of atorvastatin.",
+              "supported": true,
+              "reason": "Passage 3 and 5 list pain in extremity with incidence \u22655% in atorvastatin groups."
+            },
+            {
+              "claim": "Urinary tract infection is a common side effect of atorvastatin.",
+              "supported": true,
+              "reason": "Passage 3 and 5 list urinary tract infection with incidence \u22655% in atorvastatin groups."
+            }
+          ],
+          "n_claims": 5
+        }
+      }
+    },
+    {
+      "id": "q02",
+      "category": "interactions",
+      "question": "Which drug interactions increase the bleeding risk with warfarin?",
+      "expected_drug": "warfarin",
+      "expected_sections": [
+        "interactions"
+      ],
+      "retrieval": {
+        "unfiltered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "warfarin/interactions",
+            "warfarin/interactions",
+            "warfarin/warnings",
+            "warfarin/interactions"
+          ]
+        },
+        "drug_filtered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "warfarin/interactions",
+            "warfarin/interactions",
+            "warfarin/warnings",
+            "warfarin/interactions"
+          ]
+        }
+      },
+      "agent": {
+        "seconds": 3.8,
+        "answer": "**Warfarin \u2013 drugs that increase bleeding risk**\n\nThe label lists several drug classes (and examples) that can raise the risk of bleeding when taken with warfarin.\u202fKey classes include:\n\n- **Anticoagulants** \u2013 e.g., argatroban, dabigatran, bivalirudin, desirudin, heparin, lepirudin[4]  \n- **Antiplatelet agents** \u2013 e.g., aspirin, clopidogrel, dipyridamole, prasugrel, ticlopidine[4]  \n- **Non\u2011steroidal anti\u2011inflammatory drugs (NSAIDs)** \u2013 e.g., ibuprofen, naproxen, ketorolac, diclofenac, celecoxib, indomethacin, etc.[4]  \n- **Serotonin\u2011reuptake inhibitors (SSRIs/SNRIs)** \u2013 e.g., fluoxetine, sertraline, citalopram, duloxetine, venlafaxine, etc.[4]  \n- **Certain antibiotics, antifungals, and botanical/herbal products** (e.g., garlic, Ginkgo biloba) are also noted to increase bleeding risk and require close INR monitoring[1][5].\n\nWhen any of these agents are co\u2011administered with warfarin, the label advises more frequent INR monitoring and careful clinical observation for signs of bleeding.",
+        "retrieved": true,
+        "routing_ok": true,
+        "searches": [
+          "warfarin/interactions: interactions increase bleeding risk"
+        ],
+        "n_sources": 5,
+        "unverified_numbers": [],
+        "agent_section_hit": true,
+        "answer_fact_recall": 1.0,
+        "citations_valid": true,
+        "citation_coverage": 0.7142857142857143,
+        "judge": {
+          "faithfulness": 1.0,
+          "claims": [
+            {
+              "claim": "Anticoagulants such as argatroban, dabigatran, bivalirudin, desirudin, heparin, and lepirudin increase bleeding risk when taken with warfarin.",
+              "supported": true,
+              "reason": "Passage 4 lists these drugs under the anticoagulant class that can increase bleeding risk with warfarin."
+            },
+            {
+              "claim": "Antiplatelet agents such as aspirin, clopidogrel, dipyridamole, prasugrel, and ticlopidine increase bleeding risk when taken with warfarin.",
+              "supported": true,
+              "reason": "Passage 4 lists these drugs under the antiplatelet agent class that can increase bleeding risk with warfarin."
+            },
+            {
+              "claim": "Non\u2011steroidal anti\u2011inflammatory drugs (NSAIDs) such as ibuprofen, naproxen, ketorolac, diclofenac, celecoxib, and indomethacin increase bleeding risk when taken with warfarin.",
+              "supported": true,
+              "reason": "Passage 4 lists these NSAIDs under the class that can increase bleeding risk with warfarin."
+            },
+            {
+              "claim": "Serotonin\u2011reuptake inhibitors (SSRIs/SNRIs) such as fluoxetine, sertraline, citalopram, duloxetine, and venlafaxine increase bleeding risk when taken with warfarin.",
+              "supported": true,
+              "reason": "Passage 4 lists these SSRIs/SNRIs under the class that can increase bleeding risk with warfarin."
+            },
+            {
+              "claim": "Certain antibiotics, antifungals, and botanical/herbal products (e.g., garlic and Ginkgo biloba) increase bleeding risk when taken with warfarin.",
+              "supported": true,
+              "reason": "Passage 2 mentions antibiotics, antifungals, and botanicals as drugs that increase bleeding risk with warfarin, and Passage 5 specifically cites garlic and Ginkgo biloba as botanicals that may cause bleeding events when taken with warfarin."
+            }
+          ],
+          "n_claims": 5
+        }
+      }
+    },
+    {
+      "id": "q03",
+      "category": "contraindications",
+      "question": "When is metformin contraindicated?",
+      "expected_drug": "metformin",
+      "expected_sections": [
+        "contraindications"
+      ],
+      "retrieval": {
+        "unfiltered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "metformin/contraindications",
+            "metformin/pharmacology",
+            "metformin/pharmacology",
+            "metformin/pharmacology"
+          ]
+        },
+        "drug_filtered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "metformin/contraindications",
+            "metformin/pharmacology",
+            "metformin/pharmacology",
+            "metformin/pharmacology"
+          ]
+        }
+      },
+      "agent": {
+        "seconds": 2.8,
+        "answer": "Metformin is contraindicated in the following situations:\n\n- Severe renal impairment (estimated glomerular filtration rate\u202f<\u202f30\u202fmL/min/1.73\u202fm\u00b2)[1]  \n- Known hypersensitivity to metformin[1]  \n- Acute or chronic metabolic acidosis, including diabetic ketoacidosis, with or without coma[1]",
+        "retrieved": true,
+        "routing_ok": true,
+        "searches": [
+          "metformin/contraindications: contraindications"
+        ],
+        "n_sources": 1,
+        "unverified_numbers": [],
+        "agent_section_hit": true,
+        "answer_fact_recall": 0.6666666666666666,
+        "citations_valid": true,
+        "citation_coverage": 0.75,
+        "judge": {
+          "faithfulness": 1.0,
+          "claims": [
+            {
+              "claim": "Metformin is contraindicated in severe renal impairment (estimated glomerular filtration rate\u202f<\u202f30\u202fmL/min/1.73\u202fm\u00b2).",
+              "supported": true,
+              "reason": "Passage 1 lists severe renal impairment (eGFR below 30\u202fmL/min/1.73\u202fm\u00b2) as a contraindication."
+            },
+            {
+              "claim": "Metformin is contraindicated in patients with known hypersensitivity to metformin.",
+              "supported": true,
+              "reason": "Passage 1 lists hypersensitivity to metformin as a contraindication."
+            },
+            {
+              "claim": "Metformin is contraindicated in acute or chronic metabolic acidosis, including diabetic ketoacidosis, with or without coma.",
+              "supported": true,
+              "reason": "Passage 1 lists acute or chronic metabolic acidosis, including diabetic ketoacidosis, as a contraindication."
+            }
+          ],
+          "n_claims": 3
+        }
+      }
+    },
+    {
+      "id": "q04",
+      "category": "special_populations",
+      "question": "How should gabapentin dosing be adjusted?",
+      "expected_drug": "gabapentin",
+      "expected_sections": [
+        "dosage",
+        "special_populations"
+      ],
+      "retrieval": {
+        "unfiltered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "gabapentin/dosage",
+            "gabapentin/dosage",
+            "gabapentin/dosage",
+            "gabapentin/warnings"
+          ]
+        },
+        "drug_filtered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "gabapentin/dosage",
+            "gabapentin/dosage",
+            "gabapentin/dosage",
+            "gabapentin/warnings"
+          ]
+        }
+      },
+      "agent": {
+        "seconds": 37.6,
+        "answer": "**Gabapentin \u2013 Renal\u2011impairment dosing (adult)**  \n\n- Gabapentin is eliminated unchanged by the kidneys, and its clearance is directly proportional to creatinine clearance. Because of this, the label requires dose adjustment in adults with reduced renal function\u202f[6][8].  \n- The specific adjustment recommendations are presented in the \u201cDosage and Administration\u201d section of the label and are based on the patient\u2019s creatinine\u2011clearance (CrCl) values. The label provides a table that matches CrCl ranges with reduced dosing frequencies and/or lower total daily doses.  \n\n**What the label says**  \n- \u201cDosage adjustment in patients\u202f12\u202fyears of age and older with renal impairment \u2026 is recommended, as follows (see dosing recommendations above for effective doses in each indication).\u201d\u202f[1]  \n- \u201cDose should be adjusted based on creatinine clearance values in these patients.\u201d\u202f[6][8]  \n\n**Key point**  \n- The label does not give a single fixed dose for all levels of renal impairment; instead, it directs clinicians to use the CrCl\u2011based dosing table in the label to select an appropriate reduced dose or dosing interval for each patient.  \n\n**If you need the exact CrCl\u2011based dosing table**  \nThe label\u2019s table (found in the \u201cDosage and Administration\u201d section) lists the recommended daily dose and dosing frequency for each CrCl range (e.g., >60\u202fmL/min, 30\u201360\u202fmL/min, 15\u201330\u202fmL/min, <15\u202fmL/min, and hemodialysis). Those specific numbers are not reproduced in the passages retrieved here, so they would need to be consulted directly in the FDA label.  \n\n*I don\u2019t have the detailed numeric values from that table in the retrieved passages.*",
+        "retrieved": true,
+        "routing_ok": true,
+        "searches": [
+          "gabapentin/dosage: dose adjustment in renal impairment adult",
+          "gabapentin/None: gabapentin renal dosing table creatinine clearance"
+        ],
+        "n_sources": 9,
+        "unverified_numbers": [],
+        "agent_section_hit": true,
+        "answer_fact_recall": 1.0,
+        "citations_valid": true,
+        "citation_coverage": 0.3,
+        "judge": {
+          "faithfulness": 1.0,
+          "claims": [
+            {
+              "claim": "Gabapentin is eliminated unchanged by the kidneys and its clearance is directly proportional to creatinine clearance.",
+              "supported": true,
+              "reason": "Passage 7 states elimination is by renal excretion as unchanged drug and clearance is directly proportional to creatinine clearance."
+            },
+            {
+              "claim": "Dose adjustment is required in adults with reduced renal function.",
+              "supported": true,
+              "reason": "Passages 1, 6, and 8 explicitly state that dose adjustment is necessary in patients with renal impairment."
+            },
+            {
+              "claim": "The label provides a table that matches creatinine clearance ranges with reduced dosing frequencies and/or lower total daily doses.",
+              "supported": true,
+              "reason": "Passage 1 and 6 mention that dosing recommendations are based on creatinine clearance values and refer to a table in the label."
+            },
+            {
+              "claim": "The label does not give a single fixed dose for all levels of renal impairment; instead, it directs clinicians to use the CrCl\u2011based dosing table.",
+              "supported": true,
+              "reason": "Passage 1 and 6 describe that dosing is based on CrCl ranges, implying no single fixed dose."
+            },
+            {
+              "claim": "The specific numeric dosing recommendations for each creatinine clearance range are not included in the retrieved passages.",
+              "supported": true,
+              "reason": "The answer explicitly states that the numeric values are not reproduced in the passages."
+            }
+          ],
+          "n_claims": 5
+        }
+      }
+    },
+    {
+      "id": "q05",
+      "category": "dosage",
+      "question": "What is the maximum daily dose of acetaminophen for adults?",
+      "expected_drug": "acetaminophen",
+      "expected_sections": [
+        "dosage"
+      ],
+      "retrieval": {
+        "unfiltered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "acetaminophen/dosage",
+            "acetaminophen/dosage",
+            "acetaminophen/dosage",
+            "acetaminophen/dosage"
+          ]
+        },
+        "drug_filtered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "acetaminophen/dosage",
+            "acetaminophen/dosage",
+            "acetaminophen/dosage",
+            "acetaminophen/dosage"
+          ]
+        }
+      },
+      "agent": {
+        "seconds": 18.8,
+        "answer": "The label states that for adults (and adolescents\u202f\u2265\u202f13\u202fyears) weighing\u202f\u2265\u202f50\u202fkg, the maximum total daily dose of acetaminophen (all routes and all acetaminophen\u2011containing products) is **4000\u202fmg per 24\u202fhours**[1][4].",
+        "retrieved": true,
+        "routing_ok": true,
+        "searches": [
+          "acetaminophen/dosage: maximum daily dose adults"
+        ],
+        "n_sources": 5,
+        "unverified_numbers": [],
+        "agent_section_hit": true,
+        "answer_fact_recall": 1.0,
+        "citations_valid": true,
+        "citation_coverage": 1.0,
+        "judge": {
+          "faithfulness": 1.0,
+          "claims": [
+            {
+              "claim": "The maximum total daily dose of acetaminophen for adults is 4000 mg per 24 hours.",
+              "supported": true,
+              "reason": "Passages [1] and [4] state that adults and adolescents weighing 50 kg and over have a maximum daily dose of 4000 mg per day."
+            }
+          ],
+          "n_claims": 1
+        }
+      }
+    },
+    {
+      "id": "q06",
+      "category": "dosage",
+      "question": "What is the paracetamol dose for this child?",
+      "expected_drug": "acetaminophen",
+      "expected_sections": [
+        "dosage"
+      ],
+      "retrieval": {
+        "unfiltered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 0.5,
+          "fact_recall": 0.6666666666666666,
+          "top": [
+            "ibuprofen/dosage",
+            "acetaminophen/dosage",
+            "acetaminophen/dosage",
+            "ibuprofen/dosage"
+          ]
+        },
+        "drug_filtered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 0.6666666666666666,
+          "top": [
+            "acetaminophen/dosage",
+            "acetaminophen/dosage",
+            "acetaminophen/dosage",
+            "acetaminophen/pharmacology"
+          ]
+        }
+      },
+      "agent": {
+        "seconds": 20.2,
+        "answer": "**Acetaminophen (paracetamol) \u2013 pediatric dosing**\n\n- **Recommended dose:**\u202f15\u202fmg\u202fper\u202fkg of body weight every\u202f6\u202fhours\u202f[1][2].  \n- **Maximum single dose:**\u202f15\u202fmg\u202f/kg (up to 750\u202fmg)\u202f[2].  \n- **Maximum daily dose:**\u202f75\u202fmg\u202f/kg per 24\u202fhours (up to 3\u202f750\u202fmg)\u202f[2].\n\n**For a child weighing 20\u202fkg**\n\n- **Single dose:**\u202f15\u202fmg\u202f\u00d7\u202f20\u202fkg\u202f=\u202f**300\u202fmg** (well below the 750\u202fmg single\u2011dose limit).  \n- **Maximum daily dose:**\u202f75\u202fmg\u202f\u00d7\u202f20\u202fkg\u202f=\u202f**1\u202f500\u202fmg** per day.\n\nThus, the label\u2011recommended dose is **300\u202fmg every 6\u202fhours**, not to exceed **1\u202f500\u202fmg in 24\u202fhours**.",
+        "retrieved": true,
+        "routing_ok": true,
+        "searches": [
+          "acetaminophen/dosage: pediatric dosage weight 20 kg"
+        ],
+        "n_sources": 5,
+        "unverified_numbers": [],
+        "agent_section_hit": true,
+        "answer_fact_recall": 1.0,
+        "citations_valid": true,
+        "citation_coverage": 0.5,
+        "judge": {
+          "faithfulness": 1.0,
+          "claims": [
+            {
+              "claim": "Recommended dose is 15\u202fmg\u202fper\u202fkg of body weight every\u202f6\u202fhours.",
+              "supported": true,
+              "reason": "Passage [1] and [2] state that children 2 to 12 years receive 15\u202fmg/kg every 6 hours."
+            },
+            {
+              "claim": "Maximum single dose is 15\u202fmg\u202fper\u202fkg (up to 750\u202fmg).",
+              "supported": true,
+              "reason": "Passage [2] specifies a maximum single dose of 15\u202fmg/kg, up to 750\u202fmg."
+            },
+            {
+              "claim": "Maximum daily dose is 75\u202fmg\u202fper\u202fkg per 24\u202fhours (up to 3\u202f750\u202fmg).",
+              "supported": true,
+              "reason": "Passage [2] states a maximum daily dose of 75\u202fmg/kg in 24 hours, up to 3750\u202fmg."
+            },
+            {
+              "claim": "For a child weighing 20\u202fkg, a single dose is 300\u202fmg.",
+              "supported": true,
+              "reason": "Multiplying 15\u202fmg/kg by 20\u202fkg gives 300\u202fmg, which is below the 750\u202fmg single\u2011dose limit."
+            },
+            {
+              "claim": "For a child weighing 20\u202fkg, the maximum daily dose is 1500\u202fmg.",
+              "supported": true,
+              "reason": "Multiplying 75\u202fmg/kg by 20\u202fkg gives 1500\u202fmg, within the 3750\u202fmg daily limit."
+            }
+          ],
+          "n_claims": 5
+        }
+      }
+    },
+    {
+      "id": "q07",
+      "category": "overdose",
+      "question": "How is an acetaminophen overdose treated?",
+      "expected_drug": "acetaminophen",
+      "expected_sections": [
+        "overdose"
+      ],
+      "retrieval": {
+        "unfiltered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "acetaminophen/overdose",
+            "acetaminophen/overdose",
+            "acetaminophen/overdose",
+            "acetaminophen/boxed_warning"
+          ]
+        },
+        "drug_filtered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "acetaminophen/overdose",
+            "acetaminophen/overdose",
+            "acetaminophen/overdose",
+            "acetaminophen/boxed_warning"
+          ]
+        }
+      },
+      "agent": {
+        "seconds": 19.6,
+        "answer": "**Treatment of acetaminophen (paracetamol) overdose**\n\n- **Initial assessment**  \n  - Obtain a serum acetaminophen concentration **no sooner than 4\u202fhours** after the oral ingestion.  \n  - Perform baseline liver\u2011function tests and repeat them at 24\u2011hour intervals because hepatic injury may not become evident until 48\u201372\u202fhours post\u2011dose.  \n\n- **Use of the Rumack\u2011Matthew nomogram**  \n  - Plot the measured serum level against the time since ingestion.  \n  - The **lower toxic line** on the nomogram corresponds to **150\u202f\u00b5g/mL at 4\u202fh** (or **37.5\u202f\u00b5g/mL at 12\u202fh**)\u202f[2].  \n  - **If the level is above this line**, initiate the full course of the antidote **N\u2011acetylcysteine (NAC)**.  \n  - **If the level is below the line**, NAC therapy can be withheld.  \n\n- **Antidote administration**  \n  - **N\u2011acetylcysteine (NAC)** should be given **as early as possible** after confirming a toxic level\u202f[2].  \n  - The label recommends the standard NAC regimen (intravenous or oral) but does not specify the exact dosing in this excerpt; the full course is administered when indicated.  \n\n- **Additional steps**  \n  - Contact a poison\u2011control center (1\u2011800\u2011222\u20111222) for guidance and assistance\u202f[1].  \n  - Monitor the patient for signs of hepatic necrosis, renal tubular necrosis, hypoglycemia, or thrombocytopenia, which may develop later\u202f[3].  \n\n**Key points**: Measure serum acetaminophen \u2265\u202f4\u202fh post\u2011ingestion, compare to the Rumack\u2011Matthew nomogram, and give N\u2011acetylcysteine if the level exceeds the lower toxic line; involve poison\u2011control for support.",
+        "retrieved": true,
+        "routing_ok": true,
+        "searches": [
+          "acetaminophen/overdose: overdose treatment"
+        ],
+        "n_sources": 3,
+        "unverified_numbers": [],
+        "agent_section_hit": true,
+        "answer_fact_recall": 1.0,
+        "citations_valid": true,
+        "citation_coverage": 0.36363636363636365,
+        "judge": {
+          "faithfulness": 1.0,
+          "claims": [
+            {
+              "claim": "Obtain a serum acetaminophen concentration no sooner than 4 hours after oral ingestion",
+              "supported": true,
+              "reason": "Passage 2 states to obtain a serum acetaminophen assay as soon as possible, but no sooner than 4 hours following oral ingestion."
+            },
+            {
+              "claim": "Perform baseline liver\u2011function tests and repeat them at 24\u2011hour intervals because hepatic injury may not become evident until 48\u201372 hours post\u2011dose",
+              "supported": true,
+              "reason": "Passage 2 says obtain liver function studies initially and repeat at 24\u2011hour intervals; passage 3 notes hepatic toxicity may not be apparent until 48\u201372 hours."
+            },
+            {
+              "claim": "Plot the measured serum level against the time since ingestion on the Rumack\u2011Matthew nomogram",
+              "supported": true,
+              "reason": "Passage 2 describes using the nomogram to guide treatment."
+            },
+            {
+              "claim": "The lower toxic line on the nomogram corresponds to 150 \u00b5g/mL at 4 hours (or 37.5 \u00b5g/mL at 12 hours)",
+              "supported": true,
+              "reason": "Passage 2 provides these values for the lower toxic line."
+            },
+            {
+              "claim": "If the level is above the lower toxic line, initiate the full course of N\u2011acetylcysteine (NAC)",
+              "supported": true,
+              "reason": "Passage 2 states that if serum level is above the lower line, administer the entire course of NAC treatment."
+            },
+            {
+              "claim": "If the level is below the lower toxic line, NAC therapy can be withheld",
+              "supported": true,
+              "reason": "Passage 1 states to withhold NAC therapy if the acetaminophen level is below the lower line."
+            },
+            {
+              "claim": "N\u2011acetylcysteine (NAC) should be given as early as possible after confirming a toxic level",
+              "supported": true,
+              "reason": "Passage 2 says administer the antidote NAC as early as possible."
+            },
+            {
+              "claim": "Contact a poison\u2011control center (1\u2011800\u2011222\u20111222) for guidance and assistance",
+              "supported": true,
+              "reason": "Passage 1 provides the poison control number and advises calling for additional information."
+            },
+            {
+              "claim": "Monitor the patient for signs of hepatic necrosis, renal tubular necrosis, hypoglycemia, or thrombocytopenia, which may develop later",
+              "supported": true,
+              "reason": "Passage 3 lists these potential complications of acetaminophen overdose."
+            }
+          ],
+          "n_claims": 9
+        }
+      }
+    },
+    {
+      "id": "q08",
+      "category": "contraindications",
+      "question": "Who should not take amoxicillin?",
+      "expected_drug": "amoxicillin",
+      "expected_sections": [
+        "contraindications"
+      ],
+      "retrieval": {
+        "unfiltered": {
+          "drug_hit": true,
+          "section_hit": false,
+          "rr": 0.0,
+          "fact_recall": 0.0,
+          "top": [
+            "amoxicillin/dosage",
+            "amoxicillin/special_populations",
+            "amoxicillin/indications",
+            "amoxicillin/pharmacology"
+          ]
+        },
+        "drug_filtered": {
+          "drug_hit": true,
+          "section_hit": false,
+          "rr": 0.0,
+          "fact_recall": 0.0,
+          "top": [
+            "amoxicillin/dosage",
+            "amoxicillin/special_populations",
+            "amoxicillin/indications",
+            "amoxicillin/pharmacology"
+          ]
+        }
+      },
+      "agent": {
+        "seconds": 9.5,
+        "answer": "Amoxicillin is contraindicated in patients who have had a serious hypersensitivity reaction\u2014such as anaphylaxis or Stevens\u2011Johnson syndrome\u2014to amoxicillin itself or to other \u03b2\u2011lactam antibacterial drugs (including other penicillins or cephalosporins) [1].",
+        "retrieved": true,
+        "routing_ok": true,
+        "searches": [
+          "amoxicillin/contraindications: contraindications"
+        ],
+        "n_sources": 1,
+        "unverified_numbers": [],
+        "agent_section_hit": true,
+        "answer_fact_recall": 1.0,
+        "citations_valid": true,
+        "citation_coverage": 1.0,
+        "judge": {
+          "faithfulness": 1.0,
+          "claims": [
+            {
+              "claim": "Amoxicillin is contraindicated in patients who have had a serious hypersensitivity reaction\u2014such as anaphylaxis or Stevens\u2011Johnson syndrome\u2014to amoxicillin itself or to other \u03b2\u2011lactam antibacterial drugs (including other penicillins or cephalosporins).",
+              "supported": true,
+              "reason": "The passage explicitly states that amoxicillin is contraindicated in patients who have experienced a serious hypersensitivity reaction (e.g., anaphylaxis or Stevens\u2011Johnson syndrome) to amoxicillin or to other \u03b2\u2011lactam antibacterial drugs such as penicillins and cephalosporins."
+            }
+          ],
+          "n_claims": 1
+        }
+      }
+    },
+    {
+      "id": "q09",
+      "category": "interactions",
+      "question": "What happens if lisinopril is taken with an NSAID like ibuprofen?",
+      "expected_drug": "lisinopril",
+      "expected_sections": [
+        "interactions"
+      ],
+      "retrieval": {
+        "unfiltered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "lisinopril/interactions",
+            "lisinopril/side_effects",
+            "lisinopril/pharmacology",
+            "ibuprofen/interactions"
+          ]
+        },
+        "drug_filtered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "lisinopril/interactions",
+            "lisinopril/side_effects",
+            "lisinopril/pharmacology",
+            "lisinopril/pharmacology"
+          ]
+        }
+      },
+      "agent": {
+        "seconds": 17.3,
+        "answer": "Co\u2011administration of lisinopril (an ACE inhibitor) with non\u2011steroidal anti\u2011inflammatory drugs (NSAIDs) such as ibuprofen can:\n\n* **Reduce kidney function** \u2013 In elderly patients, those who are volume\u2011depleted (including patients on diuretics), or those with pre\u2011existing renal impairment, the combination may lead to a deterioration of renal function and can even cause acute renal failure. These effects are usually reversible if the drugs are stopped or the patient is re\u2011hydrated.  \n* **Attenuate the antihypertensive effect** \u2013 NSAIDs may blunt the blood\u2011pressure\u2011lowering action of lisinopril.  \n\nThe label advises periodic monitoring of renal function (and blood pressure) when these agents are used together.  \n\n**References**  \n* Interaction section describing renal impairment and loss of antihypertensive efficacy with NSAIDs\u202f[1][2].",
+        "retrieved": true,
+        "routing_ok": true,
+        "searches": [
+          "lisinopril/interactions: interaction with NSAIDs"
+        ],
+        "n_sources": 5,
+        "unverified_numbers": [],
+        "agent_section_hit": true,
+        "answer_fact_recall": 1.0,
+        "citations_valid": true,
+        "citation_coverage": 0.16666666666666666,
+        "judge": {
+          "faithfulness": 1.0,
+          "claims": [
+            {
+              "claim": "Co\u2011administration of lisinopril with NSAIDs such as ibuprofen can reduce kidney function, potentially leading to acute renal failure in elderly, volume\u2011depleted, or renally impaired patients.",
+              "supported": true,
+              "reason": "Passage [1] states that coadministration of NSAIDs with ACE inhibitors may result in deterioration of renal function, including possible acute renal failure, especially in elderly, volume\u2011depleted, or compromised renal function patients."
+            },
+            {
+              "claim": "The antihypertensive effect of lisinopril may be attenuated by NSAIDs.",
+              "supported": true,
+              "reason": "Passage [1] explicitly states that the antihypertensive effect of ACE inhibitors may be attenuated by NSAIDs."
+            },
+            {
+              "claim": "The effects of renal deterioration from this combination are usually reversible.",
+              "supported": true,
+              "reason": "Passage [1] notes that these effects are usually reversible."
+            },
+            {
+              "claim": "Renal function should be monitored periodically when lisinopril and NSAIDs are used together.",
+              "supported": true,
+              "reason": "Passage [1] advises monitoring renal function periodically in patients receiving lisinopril and NSAID therapy."
+            }
+          ],
+          "n_claims": 4
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "category": "interactions",
+      "question": "Why should grapefruit juice and strong CYP3A4 inhibitors be avoided with simvastatin?",
+      "expected_drug": "simvastatin",
+      "expected_sections": [
+        "interactions",
+        "contraindications",
+        "warnings"
+      ],
+      "retrieval": {
+        "unfiltered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "simvastatin/interactions",
+            "simvastatin/pharmacology",
+            "simvastatin/warnings",
+            "simvastatin/pharmacology"
+          ]
+        },
+        "drug_filtered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "simvastatin/interactions",
+            "simvastatin/pharmacology",
+            "simvastatin/warnings",
+            "simvastatin/pharmacology"
+          ]
+        }
+      },
+      "agent": {
+        "seconds": 18.4,
+        "answer": "Grapefruit juice and strong CYP3A4\u2011inhibiting drugs raise the amount of simvastatin in the bloodstream because simvastatin is metabolized by the CYP3A4 enzyme. Higher plasma concentrations increase the risk of simvastatin\u2011related myopathy and rhabdomyolysis.  \n\n* **Grapefruit juice** \u2013 the label advises to avoid grapefruit juice while taking simvastatin because it can increase simvastatin plasma levels and thus the risk of myopathy and rhabdomyolysis[1].  \n* **Strong CYP3A4 inhibitors** \u2013 concomitant use markedly increases simvastatin exposure and the risk of myopathy/rhabdomyolysis, especially at higher simvastatin doses. The label contraindicates co\u2011administration and recommends suspending simvastatin if a strong CYP3A4 inhibitor must be used[2].  \n\nTherefore, both are avoided to prevent excessive simvastatin exposure and the serious muscle toxicity that can result.",
+        "retrieved": true,
+        "routing_ok": true,
+        "searches": [
+          "simvastatin/interactions: interaction grapefruit juice strong CYP3A4 inhibitors"
+        ],
+        "n_sources": 4,
+        "unverified_numbers": [],
+        "agent_section_hit": true,
+        "answer_fact_recall": 1.0,
+        "citations_valid": true,
+        "citation_coverage": 0.3333333333333333,
+        "judge": {
+          "faithfulness": 1.0,
+          "claims": [
+            {
+              "claim": "Grapefruit juice raises the amount of simvastatin in the bloodstream because simvastatin is metabolized by the CYP3A4 enzyme.",
+              "supported": true,
+              "reason": "Passage [1] states to avoid grapefruit juice when taking simvastatin, implying it increases simvastatin levels via CYP3A4 inhibition."
+            },
+            {
+              "claim": "Higher plasma concentrations of simvastatin increase the risk of simvastatin\u2011related myopathy and rhabdomyolysis.",
+              "supported": true,
+              "reason": "Passage [2] notes that strong CYP3A4 inhibitors increase simvastatin exposure and the risk of myopathy and rhabdomyolysis."
+            },
+            {
+              "claim": "The label advises to avoid grapefruit juice while taking simvastatin because it can increase simvastatin plasma levels and thus the risk of myopathy and rhabdomyolysis.",
+              "supported": true,
+              "reason": "Passage [1] explicitly instructs to avoid grapefruit juice with simvastatin."
+            },
+            {
+              "claim": "Concomitant use of strong CYP3A4 inhibitors markedly increases simvastatin exposure and the risk of myopathy/rhabdomyolysis, especially at higher simvastatin doses, and is contraindicated; simvastatin should be suspended if a strong CYP3A4 inhibitor must be used.",
+              "supported": true,
+              "reason": "Passage [2] states that strong CYP3A4 inhibitors increase exposure and risk, contraindicates co\u2011administration, and recommends suspending simvastatin."
+            }
+          ],
+          "n_claims": 4
+        }
+      }
+    },
+    {
+      "id": "q11",
+      "category": "boxed_warning",
+      "question": "What is the boxed warning for ciprofloxacin?",
+      "expected_drug": "ciprofloxacin",
+      "expected_sections": [
+        "boxed_warning"
+      ],
+      "retrieval": {
+        "unfiltered": {
+          "drug_hit": true,
+          "section_hit": false,
+          "rr": 0.0,
+          "fact_recall": 0.0,
+          "top": [
+            "ciprofloxacin/indications",
+            "ciprofloxacin/warnings",
+            "ciprofloxacin/side_effects",
+            "ciprofloxacin/side_effects"
+          ]
+        },
+        "drug_filtered": {
+          "drug_hit": true,
+          "section_hit": false,
+          "rr": 0.0,
+          "fact_recall": 0.0,
+          "top": [
+            "ciprofloxacin/indications",
+            "ciprofloxacin/warnings",
+            "ciprofloxacin/side_effects",
+            "ciprofloxacin/side_effects"
+          ]
+        }
+      },
+      "agent": {
+        "seconds": 20.0,
+        "answer": "The boxed warning for ciprofloxacin states that fluoroquinolones, including ciprofloxacin, have been associated with serious adverse reactions such as tendinitis, tendon rupture, peripheral neuropathy, central nervous system effects, and exacerbation of myasthenia gravis. The warning advises avoiding ciprofloxacin in patients with a known history of myasthenia gravis and reserving its use for situations where no alternative treatment options exist for certain infections[2][3].",
+        "retrieved": true,
+        "routing_ok": true,
+        "searches": [
+          "ciprofloxacin/boxed_warning: boxed warning"
+        ],
+        "n_sources": 4,
+        "unverified_numbers": [],
+        "agent_section_hit": true,
+        "answer_fact_recall": 1.0,
+        "citations_valid": true,
+        "citation_coverage": 0.5,
+        "judge": {
+          "faithfulness": 1.0,
+          "claims": [
+            {
+              "claim": "The boxed warning for ciprofloxacin states that fluoroquinolones, including ciprofloxacin, have been associated with serious adverse reactions such as tendinitis, tendon rupture, peripheral neuropathy, central nervous system effects, and exacerbation of myasthenia gravis.",
+              "supported": true,
+              "reason": "Passages 2, 3, and 4 explicitly list these adverse reactions in the boxed warning."
+            },
+            {
+              "claim": "The warning advises avoiding ciprofloxacin in patients with a known history of myasthenia gravis.",
+              "supported": true,
+              "reason": "All passages mention avoidance in patients with known history of myasthenia gravis."
+            },
+            {
+              "claim": "The warning advises reserving ciprofloxacin for situations where no alternative treatment options exist for certain infections such as acute exacerbation of chronic bronchitis, acute uncomplicated cystitis, and acute sinusitis.",
+              "supported": true,
+              "reason": "Passages 2 and 4 list these indications and the recommendation to reserve use when no alternatives exist."
+            }
+          ],
+          "n_claims": 3
+        }
+      }
+    },
+    {
+      "id": "q12",
+      "category": "boxed_warning",
+      "question": "Does sertraline carry a warning about suicidal thoughts?",
+      "expected_drug": "sertraline",
+      "expected_sections": [
+        "boxed_warning",
+        "warnings"
+      ],
+      "retrieval": {
+        "unfiltered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "sertraline/boxed_warning",
+            "sertraline/warnings",
+            "sertraline/warnings",
+            "sertraline/warnings"
+          ]
+        },
+        "drug_filtered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "sertraline/boxed_warning",
+            "sertraline/warnings",
+            "sertraline/warnings",
+            "sertraline/warnings"
+          ]
+        }
+      },
+      "agent": {
+        "seconds": 8.1,
+        "answer": "Yes. The FDA label for sertraline includes a warning that patients treated with antidepressants\u2014including sertraline\u2014should be monitored for clinical worsening and the emergence of suicidal thoughts and behaviors, especially during the first few months of therapy and when doses are changed. Caregivers should also be advised to watch for such changes and notify the health\u2011care provider. In pediatric and young\u2011adult patients, pooled trial data showed a higher incidence of suicidal thoughts and behaviors compared with placebo.\u202f[1][2]",
+        "retrieved": true,
+        "routing_ok": true,
+        "searches": [
+          "sertraline/warnings: suicidal thoughts warning"
+        ],
+        "n_sources": 5,
+        "unverified_numbers": [],
+        "agent_section_hit": true,
+        "answer_fact_recall": 1.0,
+        "citations_valid": true,
+        "citation_coverage": 0.0,
+        "judge": {
+          "faithfulness": 1.0,
+          "claims": [
+            {
+              "claim": "The FDA label for sertraline includes a warning that patients treated with antidepressants\u2014including sertraline\u2014should be monitored for clinical worsening and the emergence of suicidal thoughts and behaviors, especially during the first few months of therapy and when doses are changed.",
+              "supported": true,
+              "reason": "Passage [1] explicitly states monitoring for suicidal thoughts and behaviors during initial months and dosage changes."
+            },
+            {
+              "claim": "Caregivers should also be advised to watch for such changes and notify the health\u2011care provider.",
+              "supported": true,
+              "reason": "Passage [1] advises counseling family members or caregivers to monitor for changes and alert the provider."
+            },
+            {
+              "claim": "In pediatric and young\u2011adult patients, pooled trial data showed a higher incidence of suicidal thoughts and behaviors compared with placebo.",
+              "supported": true,
+              "reason": "Passage [2] reports greater incidence of suicidal thoughts and behaviors in pediatric and young adult patients treated with antidepressants versus placebo."
+            }
+          ],
+          "n_claims": 3
+        }
+      }
+    },
+    {
+      "id": "q13",
+      "category": "boxed_warning",
+      "question": "Can levothyroxine be used for weight loss?",
+      "expected_drug": "levothyroxine",
+      "expected_sections": [
+        "boxed_warning",
+        "indications"
+      ],
+      "retrieval": {
+        "unfiltered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "levothyroxine/boxed_warning",
+            "levothyroxine/boxed_warning",
+            "levothyroxine/warnings",
+            "levothyroxine/side_effects"
+          ]
+        },
+        "drug_filtered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "levothyroxine/boxed_warning",
+            "levothyroxine/boxed_warning",
+            "levothyroxine/warnings",
+            "levothyroxine/side_effects"
+          ]
+        }
+      },
+      "agent": {
+        "seconds": 12.0,
+        "answer": "Levothyroxine is **not approved for weight\u2011loss purposes**.  The FDA label lists its only indications as:\n\n* Replacement therapy for primary, secondary or tertiary hypothyroidism in adults and children, including neonates.  \n* Adjunctive therapy for thyroid\u2011stimulating hormone (TSH) suppression in patients with well\u2011differentiated thyroid cancer undergoing surgery or radio\u2011iodine treatment[1].\n\nNo indication for weight loss or obesity management is included in the label.",
+        "retrieved": true,
+        "routing_ok": true,
+        "searches": [
+          "levothyroxine/indications: indication weight loss"
+        ],
+        "n_sources": 3,
+        "unverified_numbers": [],
+        "agent_section_hit": true,
+        "answer_fact_recall": 1.0,
+        "citations_valid": true,
+        "citation_coverage": 0.2,
+        "judge": {
+          "faithfulness": 1.0,
+          "claims": [
+            {
+              "claim": "Levothyroxine is not approved for weight\u2011loss purposes.",
+              "supported": true,
+              "reason": "The passages state that levothyroxine is indicated only for hypothyroidism and TSH suppression in thyroid cancer, with no mention of weight\u2011loss indications."
+            },
+            {
+              "claim": "The FDA label lists levothyroxine\u2019s only indications as replacement therapy for primary, secondary or tertiary hypothyroidism in adults and children, including neonates.",
+              "supported": true,
+              "reason": "Passage [1] and [2] explicitly state levothyroxine is indicated as replacement therapy for primary, secondary, and tertiary hypothyroidism in adults, pediatric patients, and neonates."
+            },
+            {
+              "claim": "The FDA label lists levothyroxine\u2019s only indications as adjunctive therapy for thyroid\u2011stimulating hormone (TSH) suppression in patients with well\u2011differentiated thyroid cancer undergoing surgery or radio\u2011iodine treatment.",
+              "supported": true,
+              "reason": "Passage [1] and [3] describe levothyroxine as indicated for TSH suppression as an adjunct to surgery and radioiodine therapy in well\u2011differentiated thyroid cancer."
+            }
+          ],
+          "n_claims": 3
+        }
+      }
+    },
+    {
+      "id": "q14",
+      "category": "interactions",
+      "question": "Is there an interaction between clopidogrel and omeprazole?",
+      "expected_drug": "clopidogrel",
+      "expected_sections": [
+        "interactions",
+        "warnings",
+        "boxed_warning"
+      ],
+      "retrieval": {
+        "unfiltered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "clopidogrel/interactions",
+            "omeprazole/warnings",
+            "omeprazole/pharmacology",
+            "clopidogrel/interactions"
+          ]
+        },
+        "drug_filtered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "clopidogrel/interactions",
+            "clopidogrel/interactions",
+            "clopidogrel/pharmacology",
+            "clopidogrel/warnings"
+          ]
+        }
+      },
+      "agent": {
+        "seconds": 8.7,
+        "answer": "Yes. The label for clopidogrel states that omeprazole (a CYP2C19 inhibitor) reduces the plasma concentration of clopidogrel\u2019s active metabolite and significantly diminishes its antiplatelet activity. Therefore, concomitant use of clopidogrel with omeprazole should be avoided[2].",
+        "retrieved": true,
+        "routing_ok": true,
+        "searches": [
+          "clopidogrel/interactions: interaction with omeprazole"
+        ],
+        "n_sources": 5,
+        "unverified_numbers": [],
+        "agent_section_hit": true,
+        "answer_fact_recall": 1.0,
+        "citations_valid": true,
+        "citation_coverage": 0.5,
+        "judge": {
+          "faithfulness": 1.0,
+          "claims": [
+            {
+              "claim": "Concomitant use of clopidogrel with omeprazole should be avoided.",
+              "supported": true,
+              "reason": "Passage 2 states that omeprazole reduces the antiplatelet activity of clopidogrel and advises avoiding concomitant use."
+            }
+          ],
+          "n_claims": 1
+        }
+      }
+    },
+    {
+      "id": "q15",
+      "category": "side_effects",
+      "question": "What are the common adverse reactions of amlodipine?",
+      "expected_drug": "amlodipine",
+      "expected_sections": [
+        "side_effects"
+      ],
+      "retrieval": {
+        "unfiltered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "amlodipine/side_effects",
+            "amlodipine/side_effects",
+            "amlodipine/side_effects",
+            "amlodipine/side_effects"
+          ]
+        },
+        "drug_filtered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "amlodipine/side_effects",
+            "amlodipine/side_effects",
+            "amlodipine/side_effects",
+            "amlodipine/side_effects"
+          ]
+        }
+      },
+      "agent": {
+        "seconds": 17.1,
+        "answer": "**Common adverse reactions to amlodipine (incidence\u202f>\u202f1%)**\n\n- Peripheral edema (dose\u2011related)[1]\n- Fatigue[1]\n- Nausea[1]\n- Abdominal pain[1]\n- Somnolence (drowsiness)[1]\n\nThese reactions are the ones most frequently reported in clinical trials and are noted in the FDA label\u2019s \u201cSide Effects\u201d section.",
+        "retrieved": true,
+        "routing_ok": true,
+        "searches": [
+          "amlodipine/side_effects: common adverse reactions"
+        ],
+        "n_sources": 5,
+        "unverified_numbers": [],
+        "agent_section_hit": true,
+        "answer_fact_recall": 1.0,
+        "citations_valid": true,
+        "citation_coverage": 0.5,
+        "judge": {
+          "faithfulness": 1.0,
+          "claims": [
+            {
+              "claim": "Peripheral edema (dose\u2011related)",
+              "supported": true,
+              "reason": "Passage [1] states edema is the most common adverse reaction and occurs in a dose\u2011related manner."
+            },
+            {
+              "claim": "Fatigue",
+              "supported": true,
+              "reason": "Passage [1] lists fatigue as an adverse experience with incidence >1%."
+            },
+            {
+              "claim": "Nausea",
+              "supported": true,
+              "reason": "Passage [1] lists nausea as an adverse experience with incidence >1%."
+            },
+            {
+              "claim": "Abdominal pain",
+              "supported": true,
+              "reason": "Passage [1] lists abdominal pain as an adverse experience with incidence >1%."
+            },
+            {
+              "claim": "Somnolence (drowsiness)",
+              "supported": true,
+              "reason": "Passage [1] lists somnolence as an adverse experience with incidence >1%."
+            }
+          ],
+          "n_claims": 5
+        }
+      }
+    },
+    {
+      "id": "q16",
+      "category": "special_populations",
+      "question": "Can losartan be used during pregnancy?",
+      "expected_drug": "losartan",
+      "expected_sections": [
+        "boxed_warning",
+        "special_populations"
+      ],
+      "retrieval": {
+        "unfiltered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "losartan/special_populations",
+            "losartan/warnings",
+            "losartan/special_populations",
+            "losartan/special_populations"
+          ]
+        },
+        "drug_filtered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "losartan/special_populations",
+            "losartan/warnings",
+            "losartan/special_populations",
+            "losartan/special_populations"
+          ]
+        }
+      },
+      "agent": {
+        "seconds": 17.4,
+        "answer": "Losartan is contraindicated in pregnancy. The label states that losartan potassium can cause fetal harm when given to a pregnant woman, especially during the second and third trimesters, and should be discontinued as soon as pregnancy is detected[2].",
+        "retrieved": true,
+        "routing_ok": true,
+        "searches": [
+          "losartan/contraindications: use during pregnancy contraindication",
+          "losartan/warnings: pregnancy contraindicated"
+        ],
+        "n_sources": 6,
+        "unverified_numbers": [],
+        "agent_section_hit": false,
+        "answer_fact_recall": 1.0,
+        "citations_valid": true,
+        "citation_coverage": 0.5,
+        "judge": {
+          "faithfulness": 1.0,
+          "claims": [
+            {
+              "claim": "Losartan is contraindicated in pregnancy.",
+              "supported": true,
+              "reason": "Passage 2 states that losartan potassium can cause fetal harm when administered to a pregnant woman and should be discontinued as soon as pregnancy is detected, indicating it is contraindicated."
+            }
+          ],
+          "n_claims": 1
+        }
+      }
+    },
+    {
+      "id": "q17",
+      "category": "special_populations",
+      "question": "Why is doxycycline generally avoided in young children?",
+      "expected_drug": "doxycycline",
+      "expected_sections": [
+        "warnings",
+        "special_populations"
+      ],
+      "retrieval": {
+        "unfiltered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 0.5,
+          "top": [
+            "doxycycline/special_populations",
+            "doxycycline/pharmacology",
+            "doxycycline/pharmacology",
+            "doxycycline/dosage"
+          ]
+        },
+        "drug_filtered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 0.5,
+          "top": [
+            "doxycycline/special_populations",
+            "doxycycline/pharmacology",
+            "doxycycline/pharmacology",
+            "doxycycline/dosage"
+          ]
+        }
+      },
+      "agent": {
+        "seconds": 13.8,
+        "answer": "Doxycycline belongs to the tetracycline class.  The FDA label warns that use of tetracyclines during tooth development (the latter half of pregnancy, infancy and childhood up to about 8\u202fyears of age) can cause **permanent discoloration of the teeth** (yellow\u2011gray\u2011brown) and may also affect bone growth.  Because of these risks, doxycycline is generally avoided in young children unless the potential benefit clearly outweighs the risk in a severe or life\u2011threatening situation.  \n\n**Key points from the label**  \n- Tooth discoloration and enamel hypoplasia have been reported with short\u2011 and long\u2011term use in children \u2264\u202f8\u202fyears\u202f[1].  \n- Tetracyclines can form calcium complexes in bone\u2011forming tissue and have been associated with reduced skeletal growth in animal studies, suggesting a risk to skeletal development in children\u202f[3].  \n\nThus, the primary reasons for avoiding doxycycline in young children are the risk of permanent tooth staining and potential adverse effects on skeletal development.",
+        "retrieved": true,
+        "routing_ok": true,
+        "searches": [
+          "doxycycline/warnings: avoid use in children due to tooth discoloration and bone growth inhibition"
+        ],
+        "n_sources": 4,
+        "unverified_numbers": [],
+        "agent_section_hit": true,
+        "answer_fact_recall": 1.0,
+        "citations_valid": true,
+        "citation_coverage": 0.3333333333333333,
+        "judge": {
+          "faithfulness": 1.0,
+          "claims": [
+            {
+              "claim": "Doxycycline belongs to the tetracycline class.",
+              "supported": true,
+              "reason": "The passages identify doxycycline as a tetracycline-class drug."
+            },
+            {
+              "claim": "The FDA label warns that use of tetracyclines during tooth development (the latter half of pregnancy, infancy and childhood up to about 8\u202fyears of age) can cause permanent discoloration of the teeth (yellow\u2011gray\u2011brown).",
+              "supported": true,
+              "reason": "Passage [1] and [2] state that tetracyclines during tooth development may cause permanent discoloration of the teeth."
+            },
+            {
+              "claim": "Use of tetracyclines during tooth development may also affect bone growth.",
+              "supported": true,
+              "reason": "Passage [3] discusses tetracyclines forming calcium complexes in bone\u2011forming tissue and associated skeletal effects."
+            },
+            {
+              "claim": "Because of these risks, doxycycline is generally avoided in young children unless the potential benefit clearly outweighs the risk in a severe or life\u2011threatening situation.",
+              "supported": true,
+              "reason": "Passage [1] explicitly states that doxycycline should be used in children 8 years or less only when benefits outweigh risks in severe or life\u2011threatening conditions."
+            },
+            {
+              "claim": "Tooth discoloration and enamel hypoplasia have been reported with short\u2011 and long\u2011term use in children \u2264\u202f8\u202fyears.",
+              "supported": true,
+              "reason": "Passage [1] mentions permanent discoloration and enamel hypoplasia in children up to 8 years."
+            },
+            {
+              "claim": "Tetracyclines can form calcium complexes in bone\u2011forming tissue and have been associated with reduced skeletal growth in animal studies, suggesting a risk to skeletal development in children.",
+              "supported": true,
+              "reason": "Passage [3] describes calcium complex formation and reduced fibula growth rate in animals."
+            }
+          ],
+          "n_claims": 6
+        }
+      }
+    },
+    {
+      "id": "q18",
+      "category": "warnings",
+      "question": "What is paradoxical bronchospasm with albuterol?",
+      "expected_drug": "albuterol",
+      "expected_sections": [
+        "warnings"
+      ],
+      "retrieval": {
+        "unfiltered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "albuterol/warnings",
+            "albuterol/side_effects",
+            "albuterol/side_effects",
+            "albuterol/dosage"
+          ]
+        },
+        "drug_filtered": {
+          "drug_hit": true,
+          "section_hit": true,
+          "rr": 1.0,
+          "fact_recall": 1.0,
+          "top": [
+            "albuterol/warnings",
+            "albuterol/side_effects",
+            "albuterol/side_effects",
+            "albuterol/dosage"
+          ]
+        }
+      },
+      "agent": {
+        "seconds": 14.6,
+        "answer": "Paradoxical bronchospasm is a rare, potentially life\u2011threatening reaction in which the airway narrows **after** inhaling albuterol instead of relaxing. The FDA label for albuterol notes:\n\n- Albuterol inhalation aerosol can cause paradoxical bronchospasm that may be life\u2011threatening.  \n- If it occurs, the product should be stopped immediately and an alternative therapy started.  \n- It is often seen with the first use of a new canister.  \n\nThese points are taken directly from the \u201cwarnings\u201d section of the albuterol label[1][4].",
+        "retrieved": true,
+        "routing_ok": true,
+        "searches": [
+          "albuterol/warnings: paradoxical bronchospasm"
+        ],
+        "n_sources": 4,
+        "unverified_numbers": [],
+        "agent_section_hit": true,
+        "answer_fact_recall": 1.0,
+        "citations_valid": true,
+        "citation_coverage": 0.16666666666666666,
+        "judge": {
+          "faithfulness": 0.75,
+          "claims": [
+            {
+              "claim": "Paradoxical bronchospasm is a rare, potentially life\u2011threatening reaction in which the airway narrows after inhaling albuterol instead of relaxing.",
+              "supported": false,
+              "reason": "The passages state that paradoxical bronchospasm can occur and may be life\u2011threatening, but they do not describe it as a rare reaction or specify that it is a reaction in which the airway narrows after inhaling albuterol instead of relaxing. The claim adds information not present in the passages."
+            },
+            {
+              "claim": "Albuterol inhalation aerosol can cause paradoxical bronchospasm that may be life\u2011threatening.",
+              "supported": true,
+              "reason": "Passage [1] and [4] explicitly state that paradoxical bronchospasm can occur and may be life\u2011threatening."
+            },
+            {
+              "claim": "If paradoxical bronchospasm occurs, the product should be stopped immediately and an alternative therapy started.",
+              "supported": true,
+              "reason": "Passage [1] and [4] state that albuterol should be discontinued immediately and alternative therapy instituted when paradoxical bronchospasm occurs."
+            },
+            {
+              "claim": "Paradoxical bronchospasm is often seen with the first use of a new canister.",
+              "supported": true,
+              "reason": "Passage [1] notes that paradoxical bronchospasm frequently occurs with the first use of a new canister."
+            }
+          ],
+          "n_claims": 4
+        }
+      }
+    },
+    {
+      "id": "q19",
+      "category": "out_of_scope",
+      "question": "What is the starting dose of semaglutide?",
+      "expected_drug": null,
+      "expected_sections": [],
+      "agent": {
+        "seconds": 13.3,
+        "answer": "I don't have verified information on that.",
+        "retrieved": true,
+        "routing_ok": true,
+        "searches": [
+          "semaglutide/dosage: starting dose"
+        ],
+        "n_sources": 0,
+        "unverified_numbers": [],
+        "refusal_ok": true
+      }
+    },
+    {
+      "id": "q20",
+      "category": "chit_chat",
+      "question": "Hello! Who are you and what can you do?",
+      "expected_drug": null,
+      "expected_sections": [],
+      "agent": {
+        "seconds": 0.5,
+        "answer": "I\u2019m MediDose\u202fAI, a study assistant that provides evidence\u2011based information from FDA drug labels about indications, dosing, side effects, interactions, contraindications, special\u2011population guidance, and related safety details for medications. Feel free to ask about any specific drug or clinical scenario.",
+        "retrieved": false,
+        "routing_ok": true,
+        "searches": [],
+        "n_sources": 0,
+        "unverified_numbers": []
+      }
+    }
+  ]
+}

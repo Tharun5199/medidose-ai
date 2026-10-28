@@ -1,0 +1,25 @@
+# Secrets — never commit API keys
+.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Generated data (re-creatable from scripts, so no need to version it)
+data/raw/
+data/chroma/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Evaluation: keep latest.json (the reported run), ignore timestamped history
+eval/results/run-*.json
